@@ -14,21 +14,33 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome t0oo <a href="https://nextjs.org">Next.js!</a>
+        サイト更新マニュアル
         </h1>
-        <Link href="/contenttype/">
-          <a>コンテンツのworks</a>
-        </Link>
+
+        <ul className="nav">
+          <li>
+            <Link href="/contenttype/works">実績の更新</Link>
+          </li>
+          <li>
+            <Link href="/contenttype/works">ニュース/ブログの更新</Link>
+          </li>
+          <li>
+            <Link href="/contenttype/works">プロダクトの更新</Link>
+          </li>
+        </ul>
+        
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href="/contenttype/works">
+            <a className={styles.card}>
+              <h2>実績の更新 &rarr;</h2>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+          </Link>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
