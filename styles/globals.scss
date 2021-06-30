@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.menu {
+  display: flex;
+  width: 100%;
+  ul {
+    display: flex;
+  }
+}
